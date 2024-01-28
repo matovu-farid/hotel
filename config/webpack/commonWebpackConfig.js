@@ -14,5 +14,7 @@ const commonOptions = {
 
 // Copy the object using merge b/c the baseClientWebpackConfig and commonOptions are mutable globals
 const commonWebpackConfig = () => merge({}, baseClientWebpackConfig, commonOptions);
+// console.log('commonWebpackConfig', JSON.stringify(commonWebpackConfig()?.module?.rules, null, 2));
+
 
 module.exports = commonWebpackConfig;
