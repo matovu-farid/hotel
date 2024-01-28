@@ -26,6 +26,7 @@ ReactOnRails.configure do |config|
   # Alternately, you can remove the `ReactOnRails::TestHelper.configure_rspec_to_compile_assets`
   # and set the config/shakapacker.yml option for test to true.
   config.build_test_command = "RAILS_ENV=test bin/shakapacker"
+  config.build_production_command = "RAILS_ENV=production NODE_ENV=production bin/shakapacker"
 
   ################################################################################
   ################################################################################
